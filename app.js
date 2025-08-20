@@ -4,6 +4,25 @@ const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
 
 
+  function openPopup() {
+    document.getElementById('popup').style.display = 'flex';
+  }
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+  }
+
+  window.onclick = function(e) {
+    if (e.target.id === 'popup') closePopup();
+  }
+    // Optional: Close popup when clicking outside
+    window.onclick = function(event) {
+      const popup = document.getElementById('popup');
+      if (event.target == popup) {
+        popup.style.display = "none";
+      }
+    }
+
 function PageTransition(){
     //Button click active class
     for(let i=0; i < sectBtn.length; i++){
