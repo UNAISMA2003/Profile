@@ -376,6 +376,45 @@ section {
   width: 85%;
 }
 
+<style>
+.language-skill {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  gap: 10px;
+}
+
+.stars-outer {
+  position: relative;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.stars-outer::before {
+  content: "★★★★★";
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #f8ce0b;
+}
+
+.stars-inner::before {
+  content: "★★★★★";
+}
+
 .stat-title {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -909,5 +948,42 @@ section {
   }
   .main-title h2 .bg-text {
     font-size: 4rem;
+  }
+
+    .star-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: sans-serif;
+  }
+
+  .stars-outer {
+    position: relative;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 24px;
+    color: #ccc; /* Gray stars (background) */
+  }
+
+  .stars-outer::before {
+    content: "★★★★★";
+  }
+
+  .stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #f8ce0b; /* Gold stars (filled) */
+  }
+
+  .stars-inner::before {
+    content: "★★★★★";
+  }
+
+  .rating-label {
+    font-size: 16px;
+    color: #fff;
   }
 }/*# sourceMappingURL=styles.css.map */
